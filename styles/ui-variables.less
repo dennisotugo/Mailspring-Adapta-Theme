@@ -1,0 +1,159 @@
+@adapta-grey:              #29353B;
+@adapta-dark-grey:         #263238;
+@adapta-light-grey:        #414857;
+@adapta-border:            #272C35;
+@adapta-hover:             #505766;
+@adapta-select:            #5294E2;
+@adapta-select-unfocused:  #4877B1;
+@white:                 #FFFFFF;
+
+///PANEL
+@panel-background-color:         #29353B;
+@source-list-bg:                 @panel-background-color;
+@source-list-active-bg:          @panel-background-color;
+@source-list-active-color:       @adapta-select;
+
+/// MENU
+@menu-divider-color: @adapta-dark-grey;
+@menu-item-color-hover: @adapta-light-grey;
+@menu-item-color-selected: @adapta-select;
+@menu-text-color-selected: @white;
+
+///BACKGROUND FONT MESSAGES
+@background-primary:     @adapta-grey;
+@background-off-primary: @adapta-grey;
+
+///BACKGROUND MESSAGES AND TOOLBAR
+@background-secondary:   @adapta-dark-grey;
+@background-tertiary:    @adapta-dark-grey;
+
+///BORDERS
+@list-border:            @adapta-border;
+@border-color-primary:   @adapta-border;
+@border-color-secondary: @adapta-border;
+@border-color-tertiary:  @adapta-border;
+@border-color-divider:   @adapta-border;
+
+///TEXT COLORS
+@text-color:         @white;
+@text-color-inverse: @white;
+@text-color-alert:  #E64D65;
+@text-color-heading: @white;
+@text-color-link:        @adapta-select;
+@text-color-link-hover:  @adapta-select-unfocused;
+@text-color-link-active: @adapta-select-unfocused;
+
+///SELECTION
+@accent-primary:         #3D94E3;
+@accent-primary-dark:    @adapta-select;
+@accent-secondary:       #4A7AB4;
+
+///HILIGHT
+@list-bg:                @adapta-hover;
+
+///TOOLBAR, SEadaptaH, BUTTONS
+@toolbar-background-color: @adapta-dark-grey;
+.sheet-toolbar {
+  border-bottom: 1px solid @list-border !important;
+  .sheet-toolbar-container {
+    background: @adapta-dark-grey;
+  }
+  .btn-toolbar {
+    background: @adapta-light-grey;
+    border: 1px solid @list-border !important;
+    box-shadow: none;
+     &:hover {
+      background: @adapta-hover;
+      }
+     &:active {
+      background: @adapta-select;
+     }
+}
+  .seadaptah-bar .menu .header-container input {
+    background: @adapta-light-grey;
+    border: 1px solid @list-border !important;
+    box-shadow: none;
+ }
+}
+
+///UNFOCUSED
+body.is-blurred {
+  .sheet-toolbar-container {
+    background: @adapta-dark-grey;
+    .btn.btn-toolbar {
+      background: @adapta-light-grey;
+      box-shadow: none;
+    }
+  }
+  .seadaptah-bar .menu .header-container input {
+    background: @adapta-light-grey;
+    box-shadow: none;
+  }
+  .list-container .list-item.focused {
+    background: @adapta-select-unfocused;
+    color:      @white;
+  }
+}
+
+///NORMAL
+body {
+  .list-container .list-item.focused {
+    background: @adapta-select;
+    color:      @white;
+  }
+}
+
+///SCROLLBAR
+.scrollbar-track {
+  background: @adapta-grey;
+  border: 1px solid @list-border !important;
+  .scrollbar-handle {
+    width: 8px;
+    border: none;
+    background: #737985;
+     &:hover {
+       background: #737985;
+       border: none;
+    }
+     &:active {
+      background: @adapta-select;
+      border: none;
+     }
+  }
+}
+
+.thread-list .list-item .list-column-HoverActions .action.action-adaptahive {
+    background: url("../static/images/thread-list-quick-actions/ic-quick-button-adaptahive@2x.png") center no-repeat, linear-gradient(to top, rgb(37, 143, 225) 0%, rgb(37, 143, 225) 100%);
+}
+.thread-list .list-item .list-column-HoverActions .action.action-trash {
+    background: url("../static/images/thread-list-quick-actions/ic-quick-button-trash@2x.png") center no-repeat, linear-gradient(to top, rgb(37, 143, 225) 0%, rgb(37, 143, 225) 100%);
+}
+.thread-list .list-item .list-column-HoverActions .action.action-snooze {
+    background: url("../static/images/thread-list-quick-actions/ic-quickaction-snooze@2x.png") center no-repeat, linear-gradient(to top, rgb(37, 143, 225) 0%, rgb(37, 143, 225) 100%);
+}
+.thread-injected-mail-labels {
+.removable {
+    color: @white !important;
+    background-color: @adapta-light-grey !important;
+    border: 1px solid @list-border !important;
+    background-image: none !important;
+    box-shadow: none !important;
+     &:hover {
+      background: @adapta-hover !important;
+      }
+     &:active {
+      background: @adapta-select !important;
+    }
+  }
+}
+.thread-injected-mail-labels  .mail-label  img {
+
+    background-color: rgb(213, 214, 216) !important;
+}
+.item-container {
+    input {
+     background-color: @adapta-grey;
+   }
+}
+  
+@import 'preferences';
