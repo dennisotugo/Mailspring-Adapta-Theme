@@ -1,4 +1,4 @@
-# Mailspring Arc Dark Theme
+# Mailspring Adapta Dark Theme
 
 Adapta Dark theme for mail client [Mailspring](https://github.com/Foundry376/Mailspring)
 
@@ -10,5 +10,5 @@ Download [ZIP-Archive](https://github.com/dennisotugo/Mailspring-Adapta-Theme/Ar
 
 # For KDE
 ```
-sed -i 's|2F343F|383C4A|g' ~/.config/Mailspring/packages/Adapta-dark/styles/ui-variables.less
+sed -i 's|2F343F|383C4A|g' ~/.config/Mailspring/packages/Adapta/styles/ui-variables.less
 ```
