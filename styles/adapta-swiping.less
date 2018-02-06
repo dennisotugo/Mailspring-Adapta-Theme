@@ -1,0 +1,49 @@
+@import 'ui-variables';
+
+.thread-list .swipe-backing.swipe-all,
+.thread-list .swipe-backing.swipe-archive,
+.draft-list .swipe-backing.swipe-all,
+.draft-list .swipe-backing.swipe-archive {
+  background: @swipe-archive;
+  &.confirmed {
+    background: saturate(@swipe-archive, 10%);
+  }
+}
+
+.thread-list .swipe-backing.swipe-snooze,
+.draft-list .swipe-backing.swipe-snooze {
+  background: @swipe-snooze;
+  &.confirmed {
+    background: saturate(@swipe-snooze, 10%);
+  }
+}
+
+.thread-list .swipe-backing.swipe-trash,
+.draft-list .swipe-backing.swipe-trash {
+  background: @swipe-trash;
+  &.confirmed {
+    background: saturate(@swipe-trash, 10%);
+  }
+}
+
+// Scrollbar
+.scrollbar-track {
+  width: 15px;
+  background: #dfe5e6;
+  opacity: 100;
+}
+.scrollbar-track .scrollbar-handle {
+  border-radius: 0;
+  background: #BEC2C3;
+  height: 50%;
+}
+.account-sidebar .scrollbar-track {
+  width: 15px;
+  background: #dfe5e6;
+  opacity: 0;
+}
+.account-sidebar .scrollbar-track .scrollbar-handle {
+  border-radius: 0;
+  background: #BEC2C3;
+  height: 50%;
+}

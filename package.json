@@ -1,12 +1,12 @@
 {
-  "name": "Adapta",
+  "name": "adapta",
   "displayName": "Adapta",
   "theme": "ui",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The Adapta Mailspring Theme",
   "license": "GPL-3.0",
   "engines": {
-    "mailspring": ">=1.0.2"
+    "mailspring": "*"
   },
   "private": true
 }

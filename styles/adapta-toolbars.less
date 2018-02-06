@@ -1,0 +1,95 @@
+@import 'ui-variables';
+
+.sheet-container .sheet-toolbar {
+  border: none;
+}
+
+.sheet-container .sheet-toolbar .sheet-toolbar-container {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+.sheet-container .sheet-toolbar .selection-bar .absolute {
+  left: 0;
+  right: 0;
+  border-left: none;
+  border-right: none;
+  background: none;
+}
+
+// Match left and right alignment across all toolbars
+.toolbar-RootSidebar,
+.toolbar-MessageList,
+.toolbar-MessageListSidebar,
+.toolbar-Center,
+.toolbar-Preferences {
+  height: 100%;
+  padding-left: @sidebar-margin;
+  padding-right: @sidebar-margin;
+}
+
+// Slightly darker toolbar for Prefs, Single Panel Messages, and Popout
+.toolbar-Preferences,
+.layout-mode-list .toolbar-MessageList,
+.sheet-toolbar-container.mode-popout {
+  background: transparent;
+  background-color: tint(@sidebar, 90%);
+  border: none;
+}
+
+// jackiehluo -> (themes): Fixes Windows button UI issues in #1649
+body.platform-win32 .sheet-toolbar-container .btn-toolbar:hover {
+  background: none;
+}
+
+// Centering vertially without magic numbers
+.layout-mode-popout .toolbar-window-controls {
+  margin-top: 0;
+}
+
+.sheet-toolbar .item-container .window-title {
+  position: static;
+  // compensate for width of .toolbar-window-controls
+  transform: translateX(-25px);
+}
+
+.sheet-toolbar .btn-toolbar {
+  box-shadow: 0 0 0 1px @border-color;
+}
+
+// Let toolbar define outer padding/margin
+.sheet-toolbar .btn-toolbar:only-of-type {
+  margin-right: 0;
+}
+
+.btn-toolbar.mode-toggle.mode-false img.content-mask {
+  background-color: @accent;
+}
+
+// Search bar
+.nylas-search-bar.thread-search-bar {
+  margin-left: 15px;
+}
+
+// Create message icon color
+.sheet-toolbar .btn.btn-toolbar.item-compose img.content-mask {
+  background-color: #ffffff;
+}
+
+// toolbar color for messages
+.toolbar-Preferences, .layout-mode-list .toolbar-MessageList, .sheet-toolbar-container.mode-popout {
+  background-color: #13191C;
+}
+
+// toolbar icons
+.btn-icon img.content-mask {
+  background-color: #ffffff;
+}
+.sheet-toolbar .item-back img.content-mask {
+  background-color: #ffffff;
+}
+
+.sheet-toolbar .item-back .item-back-title {
+  color: #ffffff;
+}
