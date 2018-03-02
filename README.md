@@ -1,5 +1,7 @@
 # Mailspring Adapta Theme
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/bananas-and-trees/Mailspring-Adapta-Theme.svg)](https://greenkeeper.io/)
+
 Adapta Dark theme for mail client [Mailspring](https://github.com/Foundry376/Mailspring)
 
 ![Screenshot](shot.png)
