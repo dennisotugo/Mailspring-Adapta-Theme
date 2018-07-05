@@ -7,7 +7,7 @@ Adapta Dark theme for mail client [Mailspring](https://github.com/Foundry376/Mai
 
 
 # Install
-Download [ZIP-Archive](https://github.com/bananas-and-trees/Mailspring-Adapta-Theme/Archive/master.zip) and extract. Run Mailspring, select **Edit - Install Theme...** and choose folder.
+Download [ZIP-Archive](https://codeload.github.com/bananas-and-trees/Mailspring-Adapta-Theme/zip/master) and extract. Run Mailspring, select **Edit - Install Theme...** and choose folder.
 
 # For KDE
 ```
